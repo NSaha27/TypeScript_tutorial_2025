@@ -29,6 +29,7 @@
 
 6. How many primitive type of data are there in TypeScript?
    There are 7 types of primitive data type in TypeScript -
+
    1. number (both int and float type),
    2. string (text type),
    3. boolean (either true or false),
@@ -36,3 +37,16 @@
    5. undefined (it has a value which is yet not defined, i.e. uninitialized value),
    6. bigint (has length greater than number type),
    7. symbol (it creates unique memory addresses for identifiers, whether they have same values or not), etc.
+
+7. How to generate a tsconfig.json file?
+   open terminal, type and run the following command -
+   "tsc --init"
+
+8. How to set the JavaScript language version for our current TypeScript project?
+
+   1. Open tsconfig.json file, and search for the "Language and Environment" properties,
+   2. set the "target" property for the JavaScript version
+
+9. How to generate a declaration file (.d.ts file) in TypeScript?
+   1. Open tsconfig.json file, and search for the "Emit" properties,
+   2. set the "declaration" property to "true" to generate declaration files i.e. .d.ts files against all .ts files.

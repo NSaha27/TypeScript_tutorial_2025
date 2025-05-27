@@ -1,0 +1,9 @@
+declare let ID: null | number;
+declare let SSN: null | number;
+declare let firstName: null | string;
+declare let lastName: null | string;
+declare let sex: null | string;
+declare let address: null | string;
+declare let phone: null | string;
+declare let email: null | string;
+declare let isEligibleToVote: null | boolean;
