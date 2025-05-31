@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="sec">
+      <h1>Add product</h1>
+      <div class="add-product">
+        <form action="#" method="post" id="add-product-form">
+          <p>
+            <h4>Product Name</h4>
+            <input type="text" name="prodName" id="prodName">
+          </p>
+          <p>
+            <h4>Product Description</h4>
+            <textarea name="prodDesc" id="prodDesc" cols="36" rows="8"></textarea>
+          </p>
+          <p>
+            <h4>Product Price</h4>
+            $<input type="number" name="prodPrice" id="prodPrice" step="0.01" min="0">
+          </p>
+          <p>
+            <button type="submit">Add</button>
+          </p>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
