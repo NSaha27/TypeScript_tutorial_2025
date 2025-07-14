@@ -1,15 +1,23 @@
 1. What is TypeScript?
    TypeScript is a superset of JavaScript. It has all the features of JavaScript with some additional features.
+
+   TypeScript is not just a language, but a very powerful compiler that compiles the TypeScript code into the JavaScript code. TypeScript compiler compiles the TS code to JavaScript code and any JavaScript runtime environment like Web Browsers or Node JS can run that JavaScript code.
+   
    It adds type checking facility and more features to JavaScript. It helps developers catch errors early by applying data type checking before code execution. It improves the code quality and maintainability.
 
 2. Different features of TypeScript?
 
    1. Data type of a variable can be specified,
    2. The concept of Interface is here,
-   3. The concept of Decorators is here,
-   4. The concept of Type-inference is here,
-   5. Some additional features over the vanila javascript are also here,
-   6. Code maintainability, and code quality are also the factors here in TypeScript.
+   3. The concept of access-modifiers is here,
+   4. The concept of Decorators is here,
+   5. The concept of Type-inference is here,
+   6. Some additional features over the vanila javascript are also here,
+   7. TypeScript is highly configurable, we can configure the TypeScript compiler as per our requirement to make sure it behaves in a way that we want it to behave.
+   8. Code maintainability, and code quality are also the factors here in TypeScript.
+
+   Disadvantage -
+   1. The only disadvantage is, there is one more step i.e. to compile the TypeScript code to JavaScript code before the JavaScript code can be executes by JavaScript runtime.
 
 3. Syntax of a TypeScript code -
    let username: string = "AMITTRIVEDI29";
