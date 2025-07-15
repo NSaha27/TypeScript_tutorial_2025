@@ -23,10 +23,20 @@
    let username: string = "AMITTRIVEDI29";
    let age: number = 29;
 
-4. What are data types?
+4. What is a variable?
+   A variable is a name storage where we can store values that are required for our program.
+
+5. Rules of naming variables?
+   - Variable names can only contain letters, digits, underscores, and dollar signs,
+   - The first character of a variable name must not be a digit,
+   - A variable name can start with a letter (a-z or A-Z), underscore (_), or a dollar sign ($),
+   - TypeScript variable names are case sensitive,
+   - TypeScript language reserved keywords cannot be used as variable names
+
+6. What are data types?
    Data types are the types of data we assign to a variable.
 
-5. How many data types are there in TypeScript?
+7. How many data types are there in TypeScript?
    There are 5 types of data types in TypeScript -
 
    1. Primitive type,
@@ -35,7 +45,7 @@
    4. Advance type,
    5. Function type, etc.
 
-6. How many primitive type of data are there in TypeScript?
+8. How many primitive type of data are there in TypeScript?
    There are 7 types of primitive data type in TypeScript -
 
    1. number (both int and float type),
@@ -46,15 +56,15 @@
    6. bigint (has length greater than number type),
    7. symbol (it creates unique memory addresses for identifiers, whether they have same values or not), etc.
 
-7. How to generate a tsconfig.json file?
+9. How to generate a tsconfig.json file?
    open terminal, type and run the following command -
    "tsc --init"
 
-8. How to set the JavaScript language version for our current TypeScript project?
+10. How to set the JavaScript language version for our current TypeScript project?
 
    1. Open tsconfig.json file, and search for the "Language and Environment" properties,
    2. set the "target" property for the JavaScript version
 
-9. How to generate a declaration file (.d.ts file) in TypeScript?
+11. How to generate a declaration file (.d.ts file) in TypeScript?
    1. Open tsconfig.json file, and search for the "Emit" properties,
    2. set the "declaration" property to "true" to generate declaration files i.e. .d.ts files against all .ts files.
