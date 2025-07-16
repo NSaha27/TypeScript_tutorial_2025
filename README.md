@@ -48,13 +48,16 @@
 8. How many primitive type of data are there in TypeScript?
    There are 7 types of primitive data type in TypeScript -
 
-   1. number (both int and float type),
+   1. number (both int and float type)(in TypeScript all mumerical datatypes are converted to floating point numbers by the TS compiler),
    2. string (text type),
-   3. boolean (either true or false),
+   3. boolean (either true or false)(including truthy and falsy values),
    4. null (it doesn't have any value),
    5. undefined (it has a value which is yet not defined, i.e. uninitialized value),
    6. bigint (has length greater than number type),
    7. symbol (it creates unique memory addresses for identifiers, whether they have same values or not), etc.
+
+9. What is Type-Inference in TypeScript?
+   When we declare a variable by initializing a value to it, TypeScript automatically inferse the datatype of the value that we were initialized with into that variable. Later we cannot change the datatype of that variable. This feature is called Type-Inference.
 
 9. How to generate a tsconfig.json file?
    open terminal, type and run the following command -
