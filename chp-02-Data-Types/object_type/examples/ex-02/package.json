@@ -1,0 +1,17 @@
+{
+  "name": "ex-02",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile_typescript": "tsc app.ts",
+    "start": "npm run compile_typescript & node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}
