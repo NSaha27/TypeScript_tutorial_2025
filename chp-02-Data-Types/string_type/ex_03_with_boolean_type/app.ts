@@ -9,7 +9,12 @@ function validatePassword(password: string): boolean {
   return passwordRegExp.test(password);
 }
 
-const users: object[] = [
+interface User {
+  username: string;
+  password: string;
+}
+
+const users: User[] = [
   {
     username: "TISTADUTTA",
     password: "Tista@12345",
@@ -39,18 +44,26 @@ function login(username: string, password: string): boolean {
     console.log("***invalid password!");
     return false;
   }
-  const user: object | undefined = users.find(
-    (user: object) => user.username === username && user.password === password,
+  const user: User | undefined = users.find(
+    (user: User) => user.username === username && user.password === password,
   );
   if (!user) {
     console.error("***invalid login credentials!");
     return false;
   }
-  console.log("***login successful!");
+  console.log(`***login successful, welcome back ${username}!`);
   return true;
 }
 
-const username: string = "NILADRISAHA";
-const password: string = "Niladri@12345";
+let username: string | undefined = undefined;
+let password: string | undefined = undefined;
 
+// trying to log in with invalid data
+username = "SUSHILPAUL";
+password = "Sushil@12345";
+login(username, password);
+
+// trying to log in with valid data
+username = "NILADRISAHA";
+password = "Niladri@12345";
 login(username, password);

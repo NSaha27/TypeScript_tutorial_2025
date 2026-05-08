@@ -29,18 +29,28 @@ function login(username, password) {
     const isValidUsername = validateUsername(username);
     const isValidPassword = validatePassword(password);
     if (!isValidUsername) {
-        return "***invalid username!";
+        console.log("***invalid username!");
+        return false;
     }
     if (!isValidPassword) {
-        return "***invalid password!";
+        console.log("***invalid password!");
+        return false;
     }
     const user = users.find((user) => user.username === username && user.password === password);
     if (!user) {
         console.error("***invalid login credentials!");
         return false;
     }
-    console.log("***login successful!");
+    console.log(`***login successful, welcome back ${username}!`);
+    return true;
 }
-const username = "NILADRISAHA";
-const password = "Niladri@12345";
+let username = undefined;
+let password = undefined;
+// trying to log in with invalid data
+username = "SUSHILPAUL";
+password = "Sushil@12345";
+login(username, password);
+// trying to log in with valid data
+username = "NILADRISAHA";
+password = "Niladri@12345";
 login(username, password);
