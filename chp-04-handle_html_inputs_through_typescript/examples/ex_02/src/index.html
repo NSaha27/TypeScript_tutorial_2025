@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>User Registration</h1>
+  <p>*enter the following details -</p>
+  <p>
+    <form action="" method="post" id="registration_form" onsubmit="handleFormSubmit(event)">
+      <p>
+        <label for="username">Username</label><br>
+        <input type="text" name="username" id="username" placeholder="enter username">
+      </p>
+      <p>
+        <label for="firstname">First Name</label><br>
+        <input type="text" name="firstname" id="firstname" placeholder="enter first name">
+      </p>
+      <p>
+        <label for="lastname">Last Name</label><br>
+        <input type="text" name="lastname" id="lastname" placeholder="enter last name">
+      </p>
+      <p>
+        <label for="aadhaar">AADHAAR No.</label><br>
+        <input type="text" name="aadhaar" id="aadhaar" placeholder="enter aadhaar number">
+      </p>
+      <p>
+        <label for="phone">Phone</label><br>
+        <input type="text" name="phone" id="phone" placeholder="enter phone number">
+      </p>
+      <p>
+        <label for="email">Email Id</label><br>
+        <input type="email" name="email" id="email" placeholder="enter email id">
+      </p>
+      <p>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="enter password">
+      </p>
+      <p>
+        <label for="confirmpassword">Confirm Password</label><br>
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password">
+      </p>
+      <p>
+        <button type="submit">Register</button>
+        <button type="reset">Cancel</button>
+      </p>
+    </form>
+  </p>
+
+  <script src="app.js"></script>
+</body>
+</html>
