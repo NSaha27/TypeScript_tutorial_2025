@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div>
+      <h1>Member Registration</h1>
+      <p>*enter the following details</p>
+      <div>
+        <form action="" method="POST" onsubmit="handleRegistration(event)">
+          <p>
+            <label for="username">Username</label><br />
+            <input type="text" name="username" id="username" />
+          </p>
+          <p>
+            <label for="full_name">Full Name</label><br />
+            <input type="text" name="full_name" id="full_name" />
+          </p>
+          <p>
+            <label for="phone">Phone</label><br />
+            <input type="text" name="phone" id="phone" />
+          </p>
+          <p>
+            <label for="email">Email ID</label><br />
+            <input type="email" name="email" id="email" />
+          </p>
+          <p>
+            <label for="password">Password</label><br />
+            <input type="password" name="password" id="password" />
+          </p>
+          <p>
+            <label for="confirm_password">Confirm Password</label><br />
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+            />
+          </p>
+          <p>
+            <button type="submit">Register</button>
+            <button type="reset">Cancel</button>
+          </p>
+        </form>
+      </div>
+      <div>
+        <p>or</p>
+        <p>Already registered? <a href="./login.html">Login</a></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
