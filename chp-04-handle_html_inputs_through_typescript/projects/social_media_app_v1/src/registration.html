@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <title>user registration</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h2 class="">Logo</h2>
+      <ul class="">
+        <li class=""><a href="../index.html" class="">Home</a></li>
+        <li class=""><a href="./posts.html" class="">Posts</a></li>
+        <li class=""><a href="#" class="">Account</a></li>
+        <li class=""><a href="./login.html" class="">Login</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1 class="">User Registration</h1>
+      <div class="">
+        <p class="">*enter the following details</p>
+        <p class="">
+          <form action="" method="post" id="registration-form">
+            <p class="">
+              <label for="username" class="">Username</label> <br>
+              <input type="text" name="username" id="username" class="" placeholder="enter username">
+            </p>
+            <p class="">
+              <label for="fullName" class="">Full Name</label> <br>
+              <input type="text" name="fullName" id="fullName" class="" placeholder="enter full name">
+            </p>
+            <p class="">
+              <label for="" class="">Sex</label> <br>
+              <div class="">
+                <span class="">
+                  <input type="radio" name="sex" id="sex-male" class="" value="male">
+                  <label for="sex-male" class="">Male</label>
+                </span>
+                <span class="">
+                  <input type="radio" name="sex" id="sex-female" class="" value="female">
+                  <label for="sex-female" class="">Female</label>
+                </span>
+                <span class="">
+                  <input type="radio" name="sex" id="sex-other" class="" value="other">
+                  <label for="sex-other" class="">Other</label>
+                </span>
+              </div>
+            </p>
+            <p class="">
+              <label for="phone" class="">Phone</label> <br>
+              <input type="text" name="phone" id="phone" class="" placeholder="enter phone number">
+            </p>
+            <p class="">
+              <label for="email" class="">Email</label> <br>
+              <input type="email" name="email" id="email" class="" placeholder="enter email ID">
+            </p>
+            <p class="">
+              <label for="password" class="">Password</label> <br>
+              <input type="password" name="password" id="password" class="" placeholder="enter password">
+            </p>
+            <p class="">
+              <label for="confirm-password" class="">Confirm Password</label> <br>
+              <input type="password" name="confirmPassword" id="confirm-password" class="" placeholder="confirm your password">
+            </p>
+            <p class="">
+              <button type="submit" class="">Register</button>
+            </p>
+          </form>
+        </p>
+        <p class="">OR</p>
+        <p class="">
+          already registered? login <a href="./login.html" class="">here</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/registration.js"></script>
+  </body>
+</html>
